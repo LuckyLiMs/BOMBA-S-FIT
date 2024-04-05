@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CodePen - Responsive Signup/Login form</title>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+   <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+   <!-- partial:index.partial.html -->
+   <div class="container">
+      <section id="formHolder">
+
+         <div class="row">
+
+            <!-- Brand Box -->
+            <div class="col-sm-6 brand">
+               <a href="#" class="logo"> </a>
+
+               <div class="heading">
+                  <h2>bomba's<span style="color: brown;">Fit</span></h2>
+                  <p>melhore sua saúde</p>
+               </div>
+            </div>
+
+
+            <!-- Box -->
+            <div class="col-sm-6 form">
+
+               <!-- TABELA DE DADOS -->
+               <div class="login form-peice switched">
+
+                  
+
+                  <form class="login-form" action="#" method="post">
+
+                     <div class="">
+                        <h2 class="display-6">
+                           Dados cadastrados
+                        </h2>
+   
+                        <table class="table table-responsive">
+                           <tr>
+                              <td>Nome</td>
+                              <td>Sobrenome</td>
+                              <td>Categoria</td>
+                              <td>Altura</td>
+                              <td>Peso</td>
+                              <td>IMC</td>
+                              <td>Classificação</td>
+                           </tr>
+                           <tbody id="resultado">
+                              <!--RESULTADO NO COMANDO FOR DENTRO DO ARQUIVO JAVASCRIPT INDEXADO-->
+                           </tbody>
+                        </table>
+   
+                        <!--<div id="resultado">-->
+   
+                     </div>
+
+                     <div class="CTA">
+                        <button class="switch"><img src="CSS/assets/back.png" width="20%"></button>
+                        <button id="btnRefresh"><img src="CSS/assets/refresh.png" width="20%"></button>
+                     </div>
+
+                  </form>
+               </div>
+
+
+               <!-- Signup Form -->
+               <div class="signup form-peice">
+                  <form class="signup-form" action="#" method="post">
+
+                     <!--NOME-->
+                     <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="nome">
+                        <span class="error"></span>
+                     </div>
+
+                     <!--SOBRENOME-->
+                     <div class="form-group">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome">
+                        <span class="error"></span>
+                     </div>
+
+                     <!--CATEGORIA-->
+                     <div class="form-group">
+                        <br>
+                        <p>selecione uma categoria</p>
+                        <select id="categoria" class="form-control">
+                           <option value="adulto">Adulto</option>
+                           <option value="infantil">Infantil</option>
+                        </select>
+                     </div>
+
+                     <!--PESO-->
+                     <div class="form-group">
+                        <label for="peso">Peso</label>
+                        <input type="number" id="peso">
+                     </div>
+
+                     <!--ALTURA-->
+                     <div class="col-6">
+                        <label for="altura">Altura</label>
+                        <input type="number" id="altura">
+                     </div>
+
+                     <!--BOTÃO-->
+                     <div class="CTA">
+                        <button id="btn">CADASTRAR</button>
+                        <button class="switch"><img src="CSS/assets/submit.png" width="20%"></button>
+                     </div>
+
+                  </form>
+               </div><!-- fim Form -->
+            </div>
+         </div>
+
+      </section>
+
+
+      <footer>
+         <p>
+            Formulário feito por: <a href="https://github.com/LuckyLiMs" target="_blank">Lucas S. Siqueira</a>
+         </p>
+      </footer>
+
+   </div>
+   <!-- partial -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+   <script src="JS/script.js"></script>
+
+</body>
+
+</html>
